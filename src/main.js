@@ -30,6 +30,9 @@ import VueTour from 'vue-tour';
 Vue.use(VueTour);
 require('vue-tour/dist/vue-tour.css');
 
+import VeeValidate from 'vee-validate';
+Vue.use(VeeValidate);
+
 import router from './router';
 import store from './store';
 import i18n from './i18n';
