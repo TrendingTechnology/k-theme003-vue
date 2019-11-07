@@ -1,0 +1,99 @@
+@import '../_variables.scss';
+
+.main-vertical {
+  &.navbar-sticky {
+    .router-content {
+      margin-top: 4.5rem;
+    }
+  }
+
+  &.navbar-static {
+    .vx-navbar-wrapper {
+      .vx-navbar {
+        background: transparent !important;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+// For application pages
+.app-page {
+  .router-view {
+    padding-bottom: 0;
+  }
+
+  &.navbar-floating {
+    .app-fixed-height {
+      height: calc(100vh - 11.5rem);
+    }
+
+    &.footer-hidden {
+      .app-fixed-height {
+        height: calc(100vh - 9.3rem);
+      }
+    }
+
+    &.footer-sticky {
+      .app-fixed-height {
+        height: calc(100vh - 13.1rem);
+      }
+    }
+  }
+
+  &.navbar-sticky {
+    .app-fixed-height {
+      height: calc(100vh - 10.5rem);
+    }
+
+    &.footer-hidden {
+      .app-fixed-height {
+        height: calc(100vh - 8.3rem);
+      }
+    }
+
+    &.footer-sticky {
+      .app-fixed-height {
+        height: calc(100vh - 12.1rem);
+      }
+    }
+  }
+
+  &.navbar-static {
+    &.footer-static {
+      .app-fixed-height {
+        height: calc(100vh - 9.25rem);
+      }
+    }
+
+    &.footer-sticky {
+      .app-fixed-height {
+        height: calc(100vh - 10.9rem);
+      }
+    }
+
+    &.footer-hidden {
+      .app-fixed-height {
+        height: calc(100vh - 7rem);
+      }
+    }
+  }
+
+  &.navbar-hidden {
+    .app-fixed-height {
+      height: calc(100vh - 6rem);
+    }
+
+    &.footer-hidden {
+      .app-fixed-height {
+        height: calc(100vh - 3.8rem);
+      }
+    }
+
+    &.footer-sticky {
+      .app-fixed-height {
+        height: calc(100vh - 7.6rem);
+      }
+    }
+  }
+}

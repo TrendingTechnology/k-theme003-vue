@@ -12,7 +12,9 @@ Vue.prototype.$http = axios;
 import './service/http/requests';
 
 import './config/theme.js';
-import './config/firebase.js'
+import './config/firebase.js';
+
+import './assets/scss/main.scss';
 
 import router from './router';
 import store from './store';

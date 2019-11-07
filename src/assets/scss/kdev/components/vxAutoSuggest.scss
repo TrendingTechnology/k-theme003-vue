@@ -1,0 +1,25 @@
+.vx-auto-suggest {
+  position: relative;
+
+  .vs-input {
+    .vs-con-input {
+      .vs-inputx {
+        z-index: 10;
+      }
+    }
+  }
+
+  .auto-suggest-suggestions-list {
+    position: absolute;
+    background: #fff;
+    width: 100%;
+
+    .auto-suggest__suggestion {
+      padding: 0.8rem 1rem;
+
+      &.vx-auto-suggest__current-selected {
+        background: #f1f1f1;
+      }
+    }
+  }
+}
