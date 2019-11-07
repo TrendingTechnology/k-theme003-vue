@@ -39,6 +39,8 @@ Vue.use(VueHammer);
 import 'prismjs';
 import 'prismjs/themes/prism-tomorrow.css';
 
+require('./assets/css/iconfont.css');
+
 import router from './router';
 import store from './store';
 import i18n from './i18n';
