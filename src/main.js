@@ -21,6 +21,8 @@ import './config/firebase.js';
 
 import './assets/scss/main.scss';
 
+import './filters'
+
 import router from './router';
 import store from './store';
 import i18n from './i18n';
