@@ -1,5 +1,5 @@
-import axios from '../../../axios/index.js';
-import store from '../../../../store/store.js';
+import axios from '../../../axios';
+import store from '../../../../../store';
 
 let isAlreadyFetchingAccessToken = false;
 let subscribers = [];
