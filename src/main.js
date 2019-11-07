@@ -21,10 +21,14 @@ import './config/firebase.js';
 
 import './assets/scss/main.scss';
 
-import './filters'
+import './filters';
 
-import VueClipboard from 'vue-clipboard2'
+import VueClipboard from 'vue-clipboard2';
 Vue.use(VueClipboard);
+
+import VueTour from 'vue-tour';
+Vue.use(VueTour);
+require('vue-tour/dist/vue-tour.css');
 
 import router from './router';
 import store from './store';
