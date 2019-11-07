@@ -23,6 +23,9 @@ import './assets/scss/main.scss';
 
 import './filters'
 
+import VueClipboard from 'vue-clipboard2'
+Vue.use(VueClipboard);
+
 import router from './router';
 import store from './store';
 import i18n from './i18n';
