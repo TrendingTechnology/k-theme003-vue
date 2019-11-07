@@ -16,6 +16,7 @@
     "firebase": "^7.2.3",
     "jsonwebtoken": "^8.5.1",
     "material-icons": "^0.3.1",
+    "prismjs": "^1.17.1",
     "vee-validate": "^3.0.11",
     "vue": "^2.6.10",
     "vue-acl": "^4.1.5",

@@ -36,6 +36,9 @@ Vue.use(VeeValidate);
 import { VueHammer } from 'vue2-hammer';
 Vue.use(VueHammer);
 
+import 'prismjs';
+import 'prismjs/themes/prism-tomorrow.css';
+
 import router from './router';
 import store from './store';
 import i18n from './i18n';
