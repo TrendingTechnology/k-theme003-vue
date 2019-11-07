@@ -9,7 +9,7 @@ const router = new Router({
   routes: [
     {
       path: '',
-      component: () => import('./layouts/main/Main.vue'),
+      component: () => import('@/layouts/main/Main.vue'),
       children: [
         {
           path: '/',
@@ -18,7 +18,7 @@ const router = new Router({
         {
           path: '/dashboard/analytics',
           name: 'dashboard-analytics',
-          component: () => import('./views/dashboard/Analytics.vue')
+          component: () => import('@/views/dashboard/Analytics.vue')
         }
       ]
     }
