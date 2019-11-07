@@ -11,6 +11,9 @@ Vue.prototype.$http = axios;
 
 import './service/http/requests';
 
+import AuthPlugin from './plugins/auth';
+Vue.use(AuthPlugin);
+
 import './fake-db/index.js';
 
 import './config/theme.js';
