@@ -11,6 +11,8 @@ Vue.prototype.$http = axios;
 
 import './service/http/requests';
 
+import './fake-db/index.js';
+
 import './config/theme.js';
 import './config/firebase.js';
 
