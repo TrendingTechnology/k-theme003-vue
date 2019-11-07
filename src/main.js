@@ -6,8 +6,10 @@ import 'material-icons/iconfont/material-icons.css';
 import 'vuesax/dist/vuesax.css';
 Vue.use(Vuesax);
 
-import axios from './axios.js';
+import axios from './service/http/axios';
 Vue.prototype.$http = axios;
+
+import './service/http/requests';
 
 import './config/theme.js';
 
