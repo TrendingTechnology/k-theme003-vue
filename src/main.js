@@ -30,7 +30,7 @@ import VueTour from 'vue-tour';
 Vue.use(VueTour);
 require('vue-tour/dist/vue-tour.css');
 
-import VeeValidate from 'vee-validate';
+import * as VeeValidate from 'vee-validate';
 Vue.use(VeeValidate);
 
 import { VueHammer } from 'vue2-hammer';
