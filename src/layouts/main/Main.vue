@@ -161,7 +161,7 @@ import navMenuItems from "@/layouts/components/vertical-nav-menu/navMenuItems.js
 import TheCustomizer from "@/layouts/components/customizer/TheCustomizer.vue";
 import TheNavbarHorizontal from "@/layouts/components/navbar/TheNavbarHorizontal.vue";
 import TheNavbarVertical from "@/layouts/components/navbar/TheNavbarVertical.vue";
-import TheFooter from "@/layouts/components/TheFooter.vue";
+import TheFooter from "@/layouts/components/footer/TheFooter.vue";
 import VNavMenu from "@/layouts/components/vertical-nav-menu/VerticalNavMenu.vue";
 import themeConfig from "@/config/theme.js";
 

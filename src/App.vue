@@ -50,8 +50,8 @@ export default {
 
     try {
       await this.$auth.renewTokens();
-    } catch (e) {
-      // console.error(e);
+    } catch (error) {
+      // reject error
     }
   },
   destroyed() {
