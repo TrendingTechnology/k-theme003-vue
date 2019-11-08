@@ -1,0 +1,184 @@
+.main-horizontal {
+  // Navbar
+  .vx-navbar-wrapper {
+    &.nav-menu-wrapper {
+      z-index: 41000;
+    }
+
+    .vx-navbar {
+      z-index: 40001;
+    }
+
+    .search-full-container {
+      .vx-auto-suggest {
+        .auto-suggest-suggestions-list {
+          @media (min-width: 1200px) {
+            width: calc(100% - 2rem) !important;
+            margin-left: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  &.navbar-floating {
+    .vs-navbar {
+      &.vx-navbar {
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+      }
+    }
+  }
+
+  &.navbar-sticky {
+    .router-content {
+      margin-top: 3.95rem;
+
+      @media (min-width: 1200px) {
+        margin-top: 8.89rem;
+      }
+    }
+
+    .vx-navbar-wrapper {
+      &:not(.nav-menu-wrapper) {
+        height: 62px;
+      }
+    }
+
+    .vs-navbar {
+      &:not(.vx-navbar) {
+        background-color: #f7f7f7 !important;
+      }
+    }
+  }
+
+  &.navbar-sticky,
+  &.navbar-static {
+    .vs-navbar {
+      &.vx-navbar {
+        box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.03);
+      }
+    }
+  }
+
+  &.navbar-static {
+    .router-content {
+      margin-top: 4.95rem;
+
+      @media (min-width: 1200px) {
+        margin-top: 1rem;
+      }
+    }
+
+    #content-area {
+      .content-wrapper {
+        min-height: calc(100vh - 8rem - 62px);
+      }
+    }
+
+    .vx-navbar-wrapper {
+      &.nav-menu-wrapper {
+        // margin-top: 62px;
+      }
+
+      &:not(.nav-menu-wrapper) {
+        position: fixed;
+      }
+    }
+  }
+
+  &:not(.navbar-static) {
+    .vx-navbar-wrapper {
+      &.nav-menu-wrapper {
+        top: 62px;
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    // Content Alignment
+    &.navbar-floating {
+      .router-content {
+        margin-top: 10.1rem;
+      }
+    }
+
+    /*
+      Only applies to NavMenu in horizontal layout
+      media query is given -> because navMenu in horizontal will be visible till 1200px.
+    */
+    & {
+      .vs-navbar {
+        &.vx-navbar {
+          padding-top: 0 !important;
+          padding-bottom: 0 !important;
+        }
+      }
+    }
+  }
+
+  // For application pages]
+  @media (min-width: 1200px) {
+    &.app-page {
+      .router-view {
+        padding-bottom: 0;
+      }
+
+      &.navbar-floating {
+        .app-fixed-height {
+          height: calc(100vh - 16rem);
+        }
+
+        &.footer-hidden {
+          .app-fixed-height {
+            height: calc(100vh - 13.4rem);
+          }
+        }
+
+        &.footer-sticky {
+          .app-fixed-height {
+            height: calc(100vh - 16.7rem);
+          }
+        }
+      }
+
+      &.navbar-sticky {
+        .app-fixed-height {
+          height: calc(100vh - 14.7rem);
+        }
+
+        &.footer-hidden {
+          .app-fixed-height {
+            height: calc(100vh - 12.7rem);
+          }
+        }
+
+        &.footer-sticky {
+          .app-fixed-height {
+            height: calc(100vh - 16.2rem);
+          }
+        }
+      }
+
+      &.navbar-static {
+        &.footer-static {
+          .app-fixed-height {
+            height: calc(100vh - 14.75rem);
+          }
+        }
+
+        &.footer-sticky {
+          .app-fixed-height {
+            height: calc(100vh - 16.7rem);
+          }
+        }
+
+        &.footer-hidden {
+          .app-fixed-height {
+            height: calc(100vh - 13rem);
+          }
+        }
+      }
+    }
+  }
+}
