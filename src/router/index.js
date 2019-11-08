@@ -47,6 +47,14 @@ const router = new Router({
             rule: 'editor',
             parent: 'email'
           }
+        },
+        {
+          path: '/apps/chat',
+          name: 'chat',
+          component: () => import('@/views/apps/chat/Chat.vue'),
+          meta: {
+            rule: 'editor'
+          }
         }
       ]
     }
