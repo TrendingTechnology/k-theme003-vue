@@ -37,8 +37,10 @@ import './config/theme.js';
 import './config/firebase.js';
 
 import './assets/scss/main.scss';
-import './assets/css/main.css'
+import './assets/css/main.css';
 require('./assets/css/iconfont.css');
+
+import './components/global.js';
 
 import router from './router';
 import store from './store';
