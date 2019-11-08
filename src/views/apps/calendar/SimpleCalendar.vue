@@ -151,7 +151,7 @@
         class="w-full mt-6"
         label-placeholder="Event URL"
         v-model="url"
-        :color="!errors.has('event-url') ? 'success' : 'danger'"
+        :color="!errors ? 'success' : 'danger'"
       ></vs-input>
     </vs-prompt>
 
@@ -216,7 +216,7 @@
         class="w-full mt-6"
         label-placeholder="Event URL"
         v-model="url"
-        :color="!errors.has('event-url') ? 'success' : 'danger'"
+        :color="!errors ? 'success' : 'danger'"
       ></vs-input>
     </vs-prompt>
   </div>
@@ -277,7 +277,7 @@ export default {
         this.startDate != "" &&
         this.endDate != "" &&
         Date.parse(this.endDate) - Date.parse(this.startDate) >= 0 &&
-        !this.errors.has("event-url")
+        !this.errors
       );
     },
     disabledDatesTo() {

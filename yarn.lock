@@ -9253,6 +9253,13 @@ vue-select@^3.2.0:
   resolved "https://registry.yarnpkg.com/vue-select/-/vue-select-3.2.0.tgz#c72166cb1f976d76cd612cde25fc8ef29f7914f5"
   integrity sha512-FfARbDuJWQNpYm6X9zPWCsYXmz33TNR2oqY8FktKRVksKfp1tZPqL9g+/7wgsaMaqUxcIxYEUVV7C3AD+H5cxA==
 
+vue-simple-calendar@^4.2.2:
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/vue-simple-calendar/-/vue-simple-calendar-4.2.2.tgz#637f592f5598f917476f43f5aab49cee02b90fd9"
+  integrity sha512-ohpoWk5xkU9X31d2Uq1YLOZ2R6WWXrmFpp7fiJADG11h4flww9m+5+rhGbQTtQJjhapvjqSVjZU1xTsqx1aOpA==
+  dependencies:
+    vue "^2.6.10"
+
 vue-style-loader@^4.1.0:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/vue-style-loader/-/vue-style-loader-4.1.2.tgz#dedf349806f25ceb4e64f3ad7c0a44fba735fcf8"
@@ -9308,6 +9315,11 @@ vuedraggable@^2.23.2:
   integrity sha512-PgHCjUpxEAEZJq36ys49HfQmXglattf/7ofOzUrW2/rRdG7tu6fK84ir14t1jYv4kdXewTEa2ieKEAhhEMdwkQ==
   dependencies:
     sortablejs "^1.10.1"
+
+vuejs-datepicker@^1.6.2:
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/vuejs-datepicker/-/vuejs-datepicker-1.6.2.tgz#83c1e8fd4108e7f1d01c061a7e344918f25e47ae"
+  integrity sha512-PkC4vxzFBo7i6FSCUAJfnaWOx6VkKbOqxijSGHHlWxh8FIUKEZVtFychkonVWtK3iwWfhmYtqHcwsmgxefLpLQ==
 
 vuesax@^3.11.1:
   version "3.11.1"

@@ -98,7 +98,7 @@ export default {
       return this.$store.state.todo.taskTags;
     },
     validateForm() {
-      return !this.errors.any() && this.taskLocal.title != "";
+      return !this.errors && this.taskLocal.title != "";
     }
   },
   methods: {

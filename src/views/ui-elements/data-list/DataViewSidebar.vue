@@ -198,7 +198,7 @@ export default {
     },
     isFormValid() {
       return (
-        !this.errors.any() &&
+        !this.errors &&
         this.dataName &&
         this.dataCategory &&
         this.dataPrice > 0
