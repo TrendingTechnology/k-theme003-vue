@@ -165,7 +165,7 @@ import TheFooter from "@/layouts/components/TheFooter.vue";
 import VNavMenu from "@/layouts/components/vertical-nav-menu/VerticalNavMenu.vue";
 import themeConfig from "@/config/theme.js";
 
-const VxTour = () => import("@/components/VxTour.vue");
+const VxTour = () => import("@/components/vx-tour/VxTour.vue");
 
 export default {
   components: {
