@@ -12,7 +12,6 @@
     v-on="$listeners"
   >
     <div class="vx-card__header" v-if="hasHeader">
-      <!-- card title -->
       <div class="vx-card__title">
         <h4 v-if="this.$props.title" :style="titleStyles" :class="titleClasses">{{ title }}</h4>
         <h6
@@ -22,7 +21,6 @@
         >{{ subtitle }}</h6>
       </div>
 
-      <!-- card actions -->
       <div class="vx-card__actions" v-if="hasAction">
         <slot name="actions">
           <div
@@ -66,15 +64,12 @@
       :class="[{collapsed: isContentCollapsed}, {'overflow-hidden': tempHidden}]"
       :style="StyleItems"
     >
-      <!-- content with no body(no padding) -->
       <slot name="no-body"></slot>
 
-      <!-- content inside body(with padding) -->
       <div class="vx-card__body" v-if="this.$slots.default">
         <slot></slot>
       </div>
 
-      <!-- content with no body(no padding) -->
       <slot name="no-body-bottom"></slot>
 
       <div class="vx-card__footer" v-if="this.$slots.footer">
@@ -151,14 +146,6 @@ export default {
       default: "",
       type: String
     },
-    // bodyBackground: {
-    //   default: '',
-    //   type: String
-    // },
-    // headerbackground: {
-    //   default: '',
-    //   type: String
-    // },
     cardBackground: {
       default: "",
       type: String
@@ -217,12 +204,10 @@ export default {
     cardClasses() {
       let str = "";
 
-      // Add bg class
       if (_color.isColor(this.cardBackground)) {
         str += ` bg-${this.cardBackground}`;
       }
 
-      // add content color
       if (_color.isColor(this.contentColor)) {
         str += ` text-${this.contentColor}`;
       }
@@ -237,7 +222,6 @@ export default {
     titleClasses() {
       let str = "";
 
-      // add content color
       if (_color.isColor(this.titleColor)) {
         str += ` text-${this.titleColor}`;
       }
@@ -254,7 +238,6 @@ export default {
     subtitleClasses() {
       let str = "";
 
-      // add content color
       if (_color.isColor(this.subtitleColor)) {
         str += ` text-${this.subtitleColor}`;
       }
