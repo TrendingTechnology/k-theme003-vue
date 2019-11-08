@@ -143,9 +143,9 @@
                       class="w-full mt-5"
                     />
                     <span
-                      v-show="errors.has('add-new-address.fullName')"
+                      v-show="errors"
                       class="text-danger"
-                    >{{ errors.first('add-new-address.fullName') }}</span>
+                    >{{ errors }}</span>
                   </div>
 
                   <div class="vx-col sm:w-1/2 w-full">
@@ -157,9 +157,9 @@
                       class="w-full mt-5"
                     />
                     <span
-                      v-show="errors.has('add-new-address.mobileNum')"
+                      v-show="errors"
                       class="text-danger"
-                    >{{ errors.first('add-new-address.mobileNum') }}</span>
+                    >{{ errors }}</span>
                   </div>
                 </div>
 
@@ -173,9 +173,9 @@
                       class="w-full mt-5"
                     />
                     <span
-                      v-show="errors.has('add-new-address.houseNum')"
+                      v-show="errors"
                       class="text-danger"
-                    >{{ errors.first('add-new-address.houseNum') }}</span>
+                    >{{ errors }}</span>
                   </div>
 
                   <div class="vx-col sm:w-1/2 w-full">
@@ -198,9 +198,9 @@
                       class="w-full mt-5"
                     />
                     <span
-                      v-show="errors.has('add-new-address.city')"
+                      v-show="errors"
                       class="text-danger"
-                    >{{ errors.first('add-new-address.city') }}</span>
+                    >{{ errors }}</span>
                   </div>
 
                   <div class="vx-col sm:w-1/2 w-full">
@@ -212,9 +212,9 @@
                       class="w-full mt-5"
                     />
                     <span
-                      v-show="errors.has('add-new-address.pincode')"
+                      v-show="errors"
                       class="text-danger"
-                    >{{ errors.first('add-new-address.pincode') }}</span>
+                    >{{ errors }}</span>
                   </div>
                 </div>
 
@@ -228,9 +228,9 @@
                       class="w-full mt-5"
                     />
                     <span
-                      v-show="errors.has('add-new-address.state')"
+                      v-show="errors"
                       class="text-danger"
-                    >{{ errors.first('add-new-address.state') }}</span>
+                    >{{ errors }}</span>
                   </div>
 
                   <div class="vx-col sm:w-1/2 w-full">
@@ -322,9 +322,9 @@
                         >CONTINUE</vs-button>
                       </div>
                       <span
-                        v-show="errors.has('cvv-form.cvv')"
+                        v-show="errors"
                         class="text-danger ml-24"
-                      >{{ errors.first('cvv-form.cvv') }}</span>
+                      >{{ errors }}</span>
                     </form>
                   </li>
 
