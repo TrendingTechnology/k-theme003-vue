@@ -9,6 +9,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "apexcharts": "^3.10.1",
     "auth0-js": "^9.11.3",
     "axios": "^0.19.0",
     "axios-mock-adapter": "^1.17.0",
@@ -23,6 +24,7 @@
     "vee-validate": "^3.0.11",
     "vue": "^2.6.10",
     "vue-acl": "^4.1.5",
+    "vue-apexcharts": "^1.5.1",
     "vue-backtotop": "^1.6.1",
     "vue-clipboard2": "^0.3.1",
     "vue-feather-icons": "^5.0.0",
