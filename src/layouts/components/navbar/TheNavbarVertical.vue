@@ -405,7 +405,7 @@ export default {
   },
   computed: {
     navbarColorLocal() {
-      return this.$store.state.theme === "dark" ? "#10163a" : this.navbarColor;
+      return this.$store.state.theme === "dark" ? "#444444" : this.navbarColor;
     },
     verticalNavMenuWidth() {
       return this.$store.state.verticalNavMenuWidth;

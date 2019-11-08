@@ -267,7 +267,7 @@ export default {
         maxScrollbarLength: 60,
         wheelSpeed: 0.6
       },
-      themeColors: ["#7367F0", "#28C76F", "#EA5455", "#FF9F43", "#1E1E1E"]
+      themeColors: ["#0085D2", "#28C76F", "#EA5455", "#FF9F43", "#1E1E1E"]
     };
   },
   watch: {

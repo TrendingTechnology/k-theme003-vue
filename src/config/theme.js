@@ -1,5 +1,5 @@
 let colors = {
-  primary: '#7367F0',
+  primary: '#0085D2',
   success: '#28C76F',
   danger: '#EA5455',
   warning: '#FF9F43',
@@ -20,7 +20,7 @@ const themeConfig = {
   navbarType: 'floating', // floating(default) / static / sticky / hidden
   routerTransition: 'zoom-fade', // none(default) / zoom-fade / slide-fade / fade-bottom / fade / zoom-out
   sidebarCollapsed: false,
-  theme: 'light', // light(default), dark, semi-dark
+  theme: 'dark', // light(default), dark, semi-dark
   userInfoLocalStorageKey: 'userInfo'
 };
 

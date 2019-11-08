@@ -10,7 +10,7 @@ $spacer-lg: ($spacer * 2);
         COLORS
 =========================================================*/
 
-$primary: #7367f0;
+$primary: #0085D2;
 $success: #28c76f;
 $danger: #ea5455;
 $warning: #ff9f43;
@@ -70,8 +70,8 @@ $reduced-sidebar-width: 80px;
         DARK THEME
 =========================================================*/
 
-$sidebar-dark-bg: #10163a;
-$content-dark-bg: #262c49;
+$sidebar-dark-bg: #2a2a2b;
+$content-dark-bg: #212121;
 $dark-card-color: #10163a;
 $table-dark-stripe: #212744;
 $table-light-stripe: #262c49;
@@ -79,7 +79,7 @@ $grid-dark-color: #343661;
 
 $theme-light-dark-bg: #262c49;
 $theme-dark-bg: #10163a;
-$theme-dark-text-color: #c2c6dc;
+$theme-dark-text-color: #d2d2d2;
 $theme-dark-heading-color: #ebeefd;
 // $theme-dark-heading-color: #C9CAD2;
 $theme-dark-border-color: #414561;
