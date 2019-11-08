@@ -310,5 +310,5 @@ export default {
 
 
 <style lang="scss">
-@import "@/assets/scss/vuexy/apps/chat.scss";
+@import "@/assets/scss/kdev/apps/chat.scss";
 </style>
