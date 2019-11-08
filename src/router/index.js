@@ -34,6 +34,92 @@ const router = new Router({
           meta: {
             rule: 'admin'
           }
+        },
+        {
+          path: '/apps/email',
+          redirect: '/apps/email/inbox'
+        },
+        {
+          path: '/apps/email/:filter',
+          name: 'email',
+          component: () => import('@/views/apps/email/Email.vue'),
+          meta: {
+            rule: 'editor',
+            parent: 'email'
+          }
+        },
+        {
+          path: '/apps/chat',
+          name: 'chat',
+          component: () => import('@/views/apps/chat/Chat.vue'),
+          meta: {
+            rule: 'editor'
+          }
+        },
+        {
+          path: '/apps/todo',
+          redirect: '/apps/todo/all'
+        },
+        {
+          path: '/apps/todo/:filter',
+          name: 'todo',
+          component: () => import('@/views/apps/todo/Todo.vue'),
+          meta: {
+            rule: 'editor',
+            parent: 'todo'
+          }
+        },
+        {
+          path: '/apps/calendar/vue-simple-calendar',
+          name: 'calendar-simple-calendar',
+          component: () => import('@/views/apps/calendar/SimpleCalendar.vue'),
+          meta: {
+            rule: 'editor'
+          }
+        },
+        {
+          path: '/apps/eCommerce/shop',
+          name: 'ecommerce-shop',
+          component: () => import('@/views/apps/eCommerce/ECommerceShop.vue'),
+          meta: {
+            breadcrumb: [
+              { title: 'Home', url: '/' },
+              { title: 'eCommerce' },
+              { title: 'Shop', active: true }
+            ],
+            pageTitle: 'Shop',
+            rule: 'editor'
+          }
+        },
+        {
+          path: '/apps/eCommerce/wish-list',
+          name: 'ecommerce-wish-list',
+          component: () =>
+            import('@/views/apps/eCommerce/ECommerceWishList.vue'),
+          meta: {
+            breadcrumb: [
+              { title: 'Home', url: '/' },
+              { title: 'eCommerce', url: '/apps/eCommerce/shop' },
+              { title: 'Wish List', active: true }
+            ],
+            pageTitle: 'Wish List',
+            rule: 'editor'
+          }
+        },
+        {
+          path: '/apps/eCommerce/checkout',
+          name: 'ecommerce-checkout',
+          component: () =>
+            import('@/views/apps/eCommerce/ECommerceCheckout.vue'),
+          meta: {
+            breadcrumb: [
+              { title: 'Home', url: '/' },
+              { title: 'eCommerce', url: '/apps/eCommerce/shop' },
+              { title: 'Checkout', active: true }
+            ],
+            pageTitle: 'Checkout',
+            rule: 'editor'
+          }
         }
       ]
     }
