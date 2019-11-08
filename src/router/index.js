@@ -55,6 +55,19 @@ const router = new Router({
           meta: {
             rule: 'editor'
           }
+        },
+        {
+          path: '/apps/todo',
+          redirect: '/apps/todo/all'
+        },
+        {
+          path: '/apps/todo/:filter',
+          name: 'todo',
+          component: () => import('@/views/apps/todo/Todo.vue'),
+          meta: {
+            rule: 'editor',
+            parent: 'todo'
+          }
         }
       ]
     }
