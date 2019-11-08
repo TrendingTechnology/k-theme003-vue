@@ -396,7 +396,7 @@ export default {
 
 .customizer-btn {
   position: fixed;
-  top: 50%;
+  top: 20%;
   right: 0;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
