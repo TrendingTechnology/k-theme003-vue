@@ -2,7 +2,7 @@
   <footer class="the-footer flex-wrap justify-between" :class="classes">
     <span>
       COPYRIGHT @ {{ new Date().getFullYear() }}
-      <a href="" target="_blank" rel="nofollow">Pixinvent</a>, All rights Reserved
+      <a href="" target="_blank" rel="nofollow">kdevsoftware</a>, All rights Reserved
     </span>
     <span class="md:flex hidden items-center">
       <span>Hand-crafted & Made with</span>
