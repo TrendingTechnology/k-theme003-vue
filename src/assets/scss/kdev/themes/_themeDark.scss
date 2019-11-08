@@ -5,7 +5,7 @@
   .main-vertical {
     &.navbar-static {
       .vx-navbar-wrapper {
-        background: none;
+        background: 'none';
       }
     }
   }
@@ -202,9 +202,13 @@
   }
 
   .vx-navbar-wrapper {
-    background: none;
-
-    .vs-navbar {
+    background: linear-gradient(
+        to bottom,
+        rgba(23, 23, 23, 0.95) 44%,
+        rgb(33, 33, 33) 73%,
+        rgba(0, 0, 0, 0) 100%
+      );
+      .vs-navbar {
       .search-full-container {
         background-color: $dark-card-color !important;
 
@@ -1009,7 +1013,7 @@
   .vs-con-table {
     .vs-con-tbody {
       background: $table-dark-stripe;
-      border: 2px solid $content-dark-bg;
+      border: 2px solid $dark-card-color;
 
       .vs-table--tbody-table {
         tr {
