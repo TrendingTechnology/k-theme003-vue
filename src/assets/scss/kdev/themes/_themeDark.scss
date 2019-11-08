@@ -464,7 +464,7 @@
 
         &:not(:first-of-type) {
           .mail__mail-item {
-            border-top: 1px solid #414561;
+            border-top: 1px solid $theme-dark-border-color;
           }
         }
       }

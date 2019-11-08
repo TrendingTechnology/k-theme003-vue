@@ -236,7 +236,7 @@ export default {
   },
   computed: {
     validateForm() {
-      return !this.errors.any() && this.mailTo != "";
+      return !this.errors && this.mailTo != "";
     },
     baseUrl() {
       const path = this.$route.path;
