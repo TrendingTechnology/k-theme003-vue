@@ -1,5 +1,5 @@
 <template>
-  <v-tour name="vuexyTour" :steps="steps">
+  <v-tour name="kdevTour" :steps="steps">
     <template slot-scope="tour">
       <transition name="fade">
         <v-step
@@ -78,11 +78,11 @@ export default {
   },
   watch: {
     "$route.path"() {
-      this.$tours["vuexyTour"].stop();
+      this.$tours["kdevTour"].stop();
     }
   },
   mounted() {
-    this.$tours["vuexyTour"].start();
+    this.$tours["kdevTour"].start();
   }
 };
 </script>

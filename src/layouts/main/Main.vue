@@ -1,13 +1,3 @@
-<!-- =========================================================================================
-    File Name: Main.vue
-    Description: Main layout
-    ----------------------------------------------------------------------------------------
-    Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
-    Author: Pixinvent
-    Author URL: http://www.themeforest.net/user/pixinvent
-========================================================================================== -->
-
-
 <template>
   <div
     class="layout--main"
@@ -35,14 +25,13 @@
     <v-nav-menu
       :navMenuItems="navMenuItems"
       :logo="navMenuLogo"
-      title="Vuexy"
+      title="KDEV"
       parent=".layout--main"
     />
 
     <div id="content-area" :class="[contentAreaClass, {'show-overlay': bodyOverlay}]">
       <div id="content-overlay" />
 
-      <!-- Navbar -->
       <template v-if="mainLayoutType === 'horizontal' && windowWidth >= 1200">
         <the-navbar-horizontal
           :navbarType="navbarType"
@@ -73,8 +62,7 @@
         ]"
         />
       </template>
-      <!-- /Navbar -->
-
+      
       <div class="content-wrapper">
         <div class="router-view">
           <div class="router-content">
@@ -90,14 +78,12 @@
                   <h2 class="mb-1">{{ routeTitle }}</h2>
                 </div>
 
-                <!-- BREADCRUMB -->
                 <vx-breadcrumb
                   class="ml-4 md:block hidden"
                   v-if="$route.meta.breadcrumb"
                   :route="$route"
                 />
 
-                <!-- DROPDOWN -->
                 <vs-dropdown vs-trigger-click class="ml-auto md:block hidden cursor-pointer">
                   <vs-button radius icon="icon-settings" icon-pack="feather" />
 
