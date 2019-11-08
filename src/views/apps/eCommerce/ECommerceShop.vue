@@ -533,7 +533,7 @@ export default {
   #algolia-instant-search-demo {
     #algolia-content-container {
       .vs-sidebar {
-        background-color: #10163a;
+        background-color: #2a2a2b;
       }
     }
   }
