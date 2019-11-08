@@ -22,7 +22,10 @@ const router = new Router({
         {
           path: '/dashboard/analytics',
           name: 'dashboard-analytics',
-          component: () => import('@/views/dashboard/Analytics.vue')
+          component: () => import('@/views/dashboard/Analytics.vue'),
+          meta: {
+            rule: 'editor'
+          }
         },
         {
           path: '/dashboard/ecommerce',

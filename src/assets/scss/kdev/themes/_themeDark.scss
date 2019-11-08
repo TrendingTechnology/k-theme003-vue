@@ -203,12 +203,12 @@
 
   .vx-navbar-wrapper {
     background: linear-gradient(
-        to bottom,
-        rgba(23, 23, 23, 0.95) 44%,
-        rgb(33, 33, 33) 73%,
-        rgba(0, 0, 0, 0) 100%
-      );
-      .vs-navbar {
+      to bottom,
+      rgba(23, 23, 23, 0.95) 44%,
+      rgb(33, 33, 33) 73%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    .vs-navbar {
       .search-full-container {
         background-color: $dark-card-color !important;
 
@@ -244,9 +244,9 @@
       width: 94%;
       background: linear-gradient(
         to bottom,
-        rgb(15, 22, 66) 44%,
-        rgba(15, 22, 66, 0.51) 73%,
-        rgba(44, 48, 60, 0) 100%
+        rgb(42, 42, 43) 44%,
+        #2a2a2bc7 73%,
+        rgba(42, 42, 43, 0.46) 100%
       );
     }
 
@@ -273,6 +273,15 @@
         }
       }
 
+      .router-link-active {
+        background: linear-gradient(
+          118deg,
+          rgba($table-dark-stripe, 1),
+          rgba($table-dark-stripe, 0.7)
+        );
+        box-shadow: 0px 0px 10px 1px rgba(30, 30, 30, 1);
+      }
+
       .vs-sidebar-group {
         &.vs-sidebar-group-active {
           > .group-header {
@@ -297,6 +306,20 @@
           background-color: $dark-card-color;
         }
       }
+    }
+    .ps__rail-y {
+      &:hover {
+        background-color: #8e8e8e1f;
+        opacity: 1;
+      }
+      &:focus {
+        background-color: #8e8e8e1f;
+        opacity: 1;
+      }
+    }
+    .ps__rail-y.ps--clicking {
+      background-color: #8e8e8e1f;
+      opacity: 1;
     }
   }
 
