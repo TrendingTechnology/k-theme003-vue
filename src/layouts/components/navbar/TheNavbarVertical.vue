@@ -418,6 +418,7 @@ export default {
       if (this.verticalNavMenuWidth == "default") return "navbar-default";
       else if (this.verticalNavMenuWidth == "reduced") return "navbar-reduced";
       else if (this.verticalNavMenuWidth) return "navbar-full";
+      return "";
     },
 
     getCurrentLocaleData() {
@@ -426,6 +427,7 @@ export default {
       else if (locale == "pt") return { flag: "br", lang: "Portuguese" };
       else if (locale == "fr") return { flag: "fr", lang: "French" };
       else if (locale == "de") return { flag: "de", lang: "German" };
+      return {};
     },
     i18n_locale_img() {
       return require(`@/assets/images/flags/${this.$i18n.locale}.png`);

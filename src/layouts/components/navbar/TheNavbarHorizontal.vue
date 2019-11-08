@@ -461,6 +461,7 @@ export default {
       else if (locale == "pt") return { flag: "br", lang: "Portuguese" };
       else if (locale == "fr") return { flag: "fr", lang: "French" };
       else if (locale == "de") return { flag: "de", lang: "German" };
+      return {};
     },
 
     data() {

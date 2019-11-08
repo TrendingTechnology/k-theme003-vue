@@ -176,8 +176,8 @@ import TheCustomizer from "@/layouts/components/customizer/TheCustomizer.vue";
 import TheNavbarHorizontal from "@/layouts/components/navbar/TheNavbarHorizontal.vue";
 import TheNavbarVertical from "@/layouts/components/navbar/TheNavbarVertical.vue";
 import TheFooter from "@/layouts/components/TheFooter.vue";
-import themeConfig from "@/config/theme.js";
 import VNavMenu from "@/layouts/components/vertical-nav-menu/VerticalNavMenu.vue";
+import themeConfig from "@/config/theme.js";
 
 const VxTour = () => import("@/components/VxTour.vue");
 
@@ -262,9 +262,9 @@ export default {
           return "content-area-reduced";
         else if (this.verticalNavMenuWidth == "reduced")
           return "content-area-lg";
-      }
-      // else if(this.mainLayoutType === "boxed") return "content-area-reduced"
-      else return "content-area-full";
+      } else return "content-area-full";
+
+      return "";
     },
     footerClasses() {
       return {
