@@ -76,6 +76,50 @@ const router = new Router({
           meta: {
             rule: 'editor'
           }
+        },
+        {
+          path: '/apps/eCommerce/shop',
+          name: 'ecommerce-shop',
+          component: () => import('@/views/apps/eCommerce/ECommerceShop.vue'),
+          meta: {
+            breadcrumb: [
+              { title: 'Home', url: '/' },
+              { title: 'eCommerce' },
+              { title: 'Shop', active: true }
+            ],
+            pageTitle: 'Shop',
+            rule: 'editor'
+          }
+        },
+        {
+          path: '/apps/eCommerce/wish-list',
+          name: 'ecommerce-wish-list',
+          component: () =>
+            import('@/views/apps/eCommerce/ECommerceWishList.vue'),
+          meta: {
+            breadcrumb: [
+              { title: 'Home', url: '/' },
+              { title: 'eCommerce', url: '/apps/eCommerce/shop' },
+              { title: 'Wish List', active: true }
+            ],
+            pageTitle: 'Wish List',
+            rule: 'editor'
+          }
+        },
+        {
+          path: '/apps/eCommerce/checkout',
+          name: 'ecommerce-checkout',
+          component: () =>
+            import('@/views/apps/eCommerce/ECommerceCheckout.vue'),
+          meta: {
+            breadcrumb: [
+              { title: 'Home', url: '/' },
+              { title: 'eCommerce', url: '/apps/eCommerce/shop' },
+              { title: 'Checkout', active: true }
+            ],
+            pageTitle: 'Checkout',
+            rule: 'editor'
+          }
         }
       ]
     }
