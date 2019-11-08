@@ -68,6 +68,14 @@ const router = new Router({
             rule: 'editor',
             parent: 'todo'
           }
+        },
+        {
+          path: '/apps/calendar/vue-simple-calendar',
+          name: 'calendar-simple-calendar',
+          component: () => import('@/views/apps/calendar/SimpleCalendar.vue'),
+          meta: {
+            rule: 'editor'
+          }
         }
       ]
     }
