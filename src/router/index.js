@@ -605,6 +605,21 @@ const router = new Router({
             pageTitle: "Tooltip",
             rule: "editor"
           }
+        },
+        {
+          path: "/components/upload",
+          name: "component-upload",
+          component: () =>
+            import("@/views/components/vuesax/upload/Upload.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Components" },
+              { title: "Upload", active: true }
+            ],
+            pageTitle: "Upload",
+            rule: "editor"
+          }
         }
       ]
     }
