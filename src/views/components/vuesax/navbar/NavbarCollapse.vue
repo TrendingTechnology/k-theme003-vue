@@ -8,7 +8,7 @@
     <div class="mt-5">
       <vs-navbar collapse v-model="activeItem" class="p-2">
         <div slot="title">
-          <vs-navbar-title><span>Vuexy</span></vs-navbar-title>
+          <vs-navbar-title><span>Kdev</span></vs-navbar-title>
         </div>
 
         <vs-navbar-item index="0">
@@ -28,7 +28,7 @@
     <template slot="codeContainer">
       &lt;template&gt; &lt;vs-navbar collapse v-model=&quot;activeItem&quot;
       class=&quot;p-2&quot;&gt; &lt;div slot=&quot;title&quot;&gt;
-      &lt;vs-navbar-title&gt; &lt;span&gt;Vuexy&lt;/span&gt;
+      &lt;vs-navbar-title&gt; &lt;span&gt;Kdev&lt;/span&gt;
       &lt;/vs-navbar-title&gt; &lt;/div&gt; &lt;vs-navbar-item
       index=&quot;0&quot;&gt; &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
       &lt;/vs-navbar-item&gt; &lt;vs-navbar-item index=&quot;1&quot;&gt; &lt;a
