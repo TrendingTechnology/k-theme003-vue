@@ -32,7 +32,7 @@
 
         <vs-list-item title="Matt" subtitle="11 Points">
           <template slot="avatar">
-            <vs-avatar vs-text="Vuexy" />
+            <vs-avatar vs-text="Kdev" />
           </template>
         </vs-list-item>
 
@@ -56,7 +56,7 @@
       &lt;template slot=&quot;avatar&quot;&gt; &lt;vs-avatar /&gt;
       &lt;/template&gt; &lt;/vs-list-item&gt; &lt;vs-list-item
       title=&quot;Matt&quot; subtitle=&quot;11 Points&quot;&gt; &lt;template
-      slot=&quot;avatar&quot;&gt; &lt;vs-avatar vs-text=&quot;Vuexy&quot;/&gt;
+      slot=&quot;avatar&quot;&gt; &lt;vs-avatar vs-text=&quot;Kdev&quot;/&gt;
       &lt;/template&gt; &lt;/vs-list-item&gt; &lt;vs-list-header
       title=&quot;Profile photo&quot;
       color=&quot;warning&quot;&gt;&lt;/vs-list-header&gt; &lt;vs-list-item
