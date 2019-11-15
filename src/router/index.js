@@ -472,6 +472,21 @@ const router = new Router({
             pageTitle: "Loading",
             rule: "editor"
           }
+        },
+        {
+          path: "/components/navbar",
+          name: "component-navbar",
+          component: () =>
+            import("@/views/components/vuesax/navbar/Navbar.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Components" },
+              { title: "Navbar", active: true }
+            ],
+            pageTitle: "Navbar",
+            rule: "editor"
+          }
         }
       ]
     }
