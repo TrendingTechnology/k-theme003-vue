@@ -324,6 +324,21 @@ const router = new Router({
             pageTitle: "Avatar",
             rule: "editor"
           }
+        },
+        {
+          path: "/components/breadcrumb",
+          name: "component-breadcrumb",
+          component: () =>
+            import("@/views/components/vuesax/breadcrumb/Breadcrumb.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Components" },
+              { title: "Breadcrumb", active: true }
+            ],
+            pageTitle: "Breadcrumb",
+            rule: "editor"
+          }
         }
       ]
     }
