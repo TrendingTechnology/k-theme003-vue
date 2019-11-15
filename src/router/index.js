@@ -197,6 +197,20 @@ const router = new Router({
             pageTitle: "Colors",
             rule: "editor"
           }
+        },
+        {
+          path: "/ui-elements/card/basic",
+          name: "basic-cards",
+          component: () => import("@/views/ui-elements/card/CardBasic.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Card" },
+              { title: "Basic Cards", active: true }
+            ],
+            pageTitle: "Basic Cards",
+            rule: "editor"
+          }
         }
       ]
     }
