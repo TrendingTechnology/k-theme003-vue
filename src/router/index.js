@@ -268,6 +268,19 @@ const router = new Router({
             pageTitle: "Card Colors",
             rule: "editor"
           }
+        },
+        {
+          path: "/ui-elements/table",
+          name: "table",
+          component: () => import("@/views/ui-elements/table/Table.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Table", active: true }
+            ],
+            pageTitle: "Table",
+            rule: "editor"
+          }
         }
       ]
     }
