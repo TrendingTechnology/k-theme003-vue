@@ -295,6 +295,20 @@ const router = new Router({
             pageTitle: "agGrid Table",
             rule: "editor"
           }
+        },
+        {
+          path: "/components/alert",
+          name: "component-alert",
+          component: () => import("@/views/components/vuesax/alert/Alert.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Components" },
+              { title: "Alert", active: true }
+            ],
+            pageTitle: "Alert",
+            rule: "editor"
+          }
         }
       ]
     }
