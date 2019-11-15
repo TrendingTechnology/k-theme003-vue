@@ -184,6 +184,19 @@ const router = new Router({
             pageTitle: "Tailwind Grid",
             rule: "editor"
           }
+        },
+        {
+          path: "/ui-elements/colors",
+          name: "colors",
+          component: () => import("@/views/ui-elements/colors/Colors.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Colors", active: true }
+            ],
+            pageTitle: "Colors",
+            rule: "editor"
+          }
         }
       ]
     }
