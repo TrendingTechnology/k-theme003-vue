@@ -546,6 +546,21 @@ const router = new Router({
             pageTitle: "Progress",
             rule: "editor"
           }
+        },
+        {
+          path: "/components/sidebar",
+          name: "component-sidebar",
+          component: () =>
+            import("@/views/components/vuesax/sidebar/Sidebar.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Components" },
+              { title: "Sidebar", active: true }
+            ],
+            pageTitle: "Sidebar",
+            rule: "editor"
+          }
         }
       ]
     }
