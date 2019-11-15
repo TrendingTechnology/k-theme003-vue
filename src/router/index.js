@@ -169,6 +169,21 @@ const router = new Router({
             pageTitle: "Grid",
             rule: "editor"
           }
+        },
+        {
+          path: "/ui-elements/grid/tailwind",
+          name: "grid-tailwind",
+          component: () =>
+            import("@/views/ui-elements/grid/tailwind/GridTailwind.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Grid" },
+              { title: "Tailwind", active: true }
+            ],
+            pageTitle: "Tailwind Grid",
+            rule: "editor"
+          }
         }
       ]
     }
