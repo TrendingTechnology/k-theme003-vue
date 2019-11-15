@@ -457,6 +457,21 @@ const router = new Router({
             pageTitle: "List",
             rule: "editor"
           }
+        },
+        {
+          path: "/components/loading",
+          name: "component-loading",
+          component: () =>
+            import("@/views/components/vuesax/loading/Loading.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Components" },
+              { title: "Loading", active: true }
+            ],
+            pageTitle: "Loading",
+            rule: "editor"
+          }
         }
       ]
     }
