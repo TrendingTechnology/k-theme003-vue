@@ -398,6 +398,21 @@ const router = new Router({
             pageTitle: "Collapse",
             rule: "editor"
           }
+        },
+        {
+          path: "/components/dialogs",
+          name: "component-dialog",
+          component: () =>
+            import("@/views/components/vuesax/dialogs/Dialogs.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Components" },
+              { title: "Dialogs", active: true }
+            ],
+            pageTitle: "Dialogs",
+            rule: "editor"
+          }
         }
       ]
     }
