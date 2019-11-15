@@ -443,6 +443,20 @@ const router = new Router({
             pageTitle: "Dropdown",
             rule: "editor"
           }
+        },
+        {
+          path: "/components/list",
+          name: "component-list",
+          component: () => import("@/views/components/vuesax/list/List.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Components" },
+              { title: "List", active: true }
+            ],
+            pageTitle: "List",
+            rule: "editor"
+          }
         }
       ]
     }
