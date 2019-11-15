@@ -383,6 +383,21 @@ const router = new Router({
             pageTitle: "Chip",
             rule: "editor"
           }
+        },
+        {
+          path: "/components/collapse",
+          name: "component-collapse",
+          component: () =>
+            import("@/views/components/vuesax/collapse/Collapse.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Components" },
+              { title: "Collapse", active: true }
+            ],
+            pageTitle: "Collapse",
+            rule: "editor"
+          }
         }
       ]
     }
