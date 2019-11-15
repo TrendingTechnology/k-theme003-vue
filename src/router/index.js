@@ -561,6 +561,21 @@ const router = new Router({
             pageTitle: "Sidebar",
             rule: "editor"
           }
+        },
+        {
+          path: "/components/slider",
+          name: "component-slider",
+          component: () =>
+            import("@/views/components/vuesax/slider/Slider.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Components" },
+              { title: "Slider", active: true }
+            ],
+            pageTitle: "Slider",
+            rule: "editor"
+          }
         }
       ]
     }
