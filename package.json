@@ -40,6 +40,7 @@
     "vue-select": "^3.2.0",
     "vue-simple-calendar": "^4.2.2",
     "vue-tour": "^1.1.0",
+    "vue-video-player": "^5.0.2",
     "vue2-hammer": "^2.1.2",
     "vuedraggable": "^2.23.2",
     "vuejs-datepicker": "^1.6.2",
