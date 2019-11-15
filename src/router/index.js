@@ -281,6 +281,20 @@ const router = new Router({
             pageTitle: "Table",
             rule: "editor"
           }
+        },
+        {
+          path: "/ui-elements/ag-grid-table",
+          name: "ag-grid-table",
+          component: () =>
+            import("@/views/ui-elements/ag-grid-table/AgGridTable.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "agGrid Table", active: true }
+            ],
+            pageTitle: "agGrid Table",
+            rule: "editor"
+          }
         }
       ]
     }

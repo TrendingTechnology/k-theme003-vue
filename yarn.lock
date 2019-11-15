@@ -1533,6 +1533,16 @@ aes-decrypter@3.0.0:
     global "^4.3.2"
     pkcs7 "^1.0.2"
 
+ag-grid-community@^22.0.0:
+  version "22.0.0"
+  resolved "https://registry.yarnpkg.com/ag-grid-community/-/ag-grid-community-22.0.0.tgz#85e612804d6c8a455952b50539c9736b0f7f33b2"
+  integrity sha512-kxeJr+zkZIJuE1HLHLYclklaFZtffBIE9A2feZQHf3OcHj0csb+VYfCaigTAoiAqQxEQZshFVfZ8R4T34pqoig==
+
+ag-grid-vue@^22.0.0:
+  version "22.0.0"
+  resolved "https://registry.yarnpkg.com/ag-grid-vue/-/ag-grid-vue-22.0.0.tgz#98f5e9bc0a2bf07bfb464339ee310b4ad3a588df"
+  integrity sha512-ze2eve4zkkolOhlFtAYWjGM3+GUMmnXK8OokUzEGKwZB20o2oAyCI0XqEXz5ynSO08hL5s3QMqWkvtIHPkgrzA==
+
 agentkeepalive@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/agentkeepalive/-/agentkeepalive-2.2.0.tgz#c5d1bd4b129008f1163f236f86e5faea2026e2ef"
@@ -9628,6 +9638,11 @@ vue-backtotop@^1.6.1:
   dependencies:
     vue "2.3.3"
 
+vue-class-component@^7.1.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/vue-class-component/-/vue-class-component-7.1.0.tgz#b33efcb10e17236d684f70b1e96f1946ec793e87"
+  integrity sha512-G9152NzUkz0i0xTfhk0Afc8vzdXxDR1pfN4dTwE72cskkgJtdXfrKBkMfGvDuxUh35U500g5Ve4xL8PEGdWeHg==
+
 vue-clipboard2@^0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/vue-clipboard2/-/vue-clipboard2-0.3.1.tgz#6e551fb7bd384889b28b0da3b12289ed6bca4894"
@@ -9697,6 +9712,13 @@ vue-prism-component@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/vue-prism-component/-/vue-prism-component-1.1.1.tgz#df0e375f7f9b367b069b2d54e6ed86facde96030"
   integrity sha512-M4wM7gMIagWgf3YNS5Hrq7YDYu0pYbqMaJOhkVDfCfJ1col4ZCv+uyWpW/gkYZCuG3ic8UF3EAV22asm4pWjMA==
+
+vue-property-decorator@^8.3.0:
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/vue-property-decorator/-/vue-property-decorator-8.3.0.tgz#536f027dc7d626f37c8d85a2dc02f0a6cb979440"
+  integrity sha512-77YtTbZHd5CNiPzbqv51kEgL48yvD2dUDfF28vEyw3MbQ9bBAb/tDyFzskcqjNRbWyXk1vq4oM2CK/LfhxuIBg==
+  dependencies:
+    vue-class-component "^7.1.0"
 
 vue-quill-editor@^3.0.6:
   version "3.0.6"
