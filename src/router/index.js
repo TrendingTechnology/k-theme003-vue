@@ -154,6 +154,21 @@ const router = new Router({
             pageTitle: "Thumb View",
             rule: "editor"
           }
+        },
+        {
+          path: "/ui-elements/grid/vuesax",
+          name: "grid-vuesax",
+          component: () =>
+            import("@/views/ui-elements/grid/vuesax/GridVuesax.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Grid" },
+              { title: "Vuesax", active: true }
+            ],
+            pageTitle: "Grid",
+            rule: "editor"
+          }
         }
       ]
     }
