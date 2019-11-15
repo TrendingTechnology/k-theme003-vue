@@ -576,6 +576,20 @@ const router = new Router({
             pageTitle: "Slider",
             rule: "editor"
           }
+        },
+        {
+          path: "/components/tabs",
+          name: "component-tabs",
+          component: () => import("@/views/components/vuesax/tabs/Tabs.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Components" },
+              { title: "Tabs", active: true }
+            ],
+            pageTitle: "Tabs",
+            rule: "editor"
+          }
         }
       ]
     }
