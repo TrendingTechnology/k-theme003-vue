@@ -531,6 +531,21 @@ const router = new Router({
             pageTitle: "Popup",
             rule: "editor"
           }
+        },
+        {
+          path: "/components/progress",
+          name: "component-progress",
+          component: () =>
+            import("@/views/components/vuesax/progress/Progress.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Components" },
+              { title: "Progress", active: true }
+            ],
+            pageTitle: "Progress",
+            rule: "editor"
+          }
         }
       ]
     }
