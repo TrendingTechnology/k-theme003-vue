@@ -487,6 +487,21 @@ const router = new Router({
             pageTitle: "Navbar",
             rule: "editor"
           }
+        },
+        {
+          path: "/components/notifications",
+          name: "component-notifications",
+          component: () =>
+            import("@/views/components/vuesax/notifications/Notifications.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Components" },
+              { title: "Notifications", active: true }
+            ],
+            pageTitle: "Notifications",
+            rule: "editor"
+          }
         }
       ]
     }
