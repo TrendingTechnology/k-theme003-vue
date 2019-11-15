@@ -339,6 +339,21 @@ const router = new Router({
             pageTitle: "Breadcrumb",
             rule: "editor"
           }
+        },
+        {
+          path: "/components/button",
+          name: "component-button",
+          component: () =>
+            import("@/views/components/vuesax/button/Button.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Components" },
+              { title: "Button", active: true }
+            ],
+            pageTitle: "Button",
+            rule: "editor"
+          }
         }
       ]
     }
