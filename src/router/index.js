@@ -590,6 +590,21 @@ const router = new Router({
             pageTitle: "Tabs",
             rule: "editor"
           }
+        },
+        {
+          path: "/components/tooltip",
+          name: "component-tooltip",
+          component: () =>
+            import("@/views/components/vuesax/tooltip/Tooltip.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Components" },
+              { title: "Tooltip", active: true }
+            ],
+            pageTitle: "Tooltip",
+            rule: "editor"
+          }
         }
       ]
     }
