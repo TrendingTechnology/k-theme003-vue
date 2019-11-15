@@ -240,6 +240,20 @@ const router = new Router({
             pageTitle: "Analytics Card",
             rule: "editor"
           }
+        },
+        {
+          path: "/ui-elements/card/card-actions",
+          name: "card-actions",
+          component: () => import("@/views/ui-elements/card/CardActions.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Card" },
+              { title: "Card Actions", active: true }
+            ],
+            pageTitle: "Card Actions",
+            rule: "editor"
+          }
         }
       ]
     }
