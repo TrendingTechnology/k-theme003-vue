@@ -137,6 +137,23 @@ const router = new Router({
             pageTitle: "List View",
             rule: "editor"
           }
+        },
+        {
+          path: "/ui-elements/data-list/thumb-view",
+          name: "data-list-thumb-view",
+          component: () =>
+            import(
+              "@/views/ui-elements/data-list/thumb-view/DataListThumbView.vue"
+            ),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Data List" },
+              { title: "Thumb View", active: true }
+            ],
+            pageTitle: "Thumb View",
+            rule: "editor"
+          }
         }
       ]
     }
