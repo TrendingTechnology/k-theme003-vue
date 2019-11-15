@@ -517,6 +517,20 @@ const router = new Router({
             pageTitle: "Pagination",
             rule: "editor"
           }
+        },
+        {
+          path: "/components/popup",
+          name: "component-popup",
+          component: () => import("@/views/components/vuesax/popup/Popup.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Components" },
+              { title: "Popup", active: true }
+            ],
+            pageTitle: "Popup",
+            rule: "editor"
+          }
         }
       ]
     }
