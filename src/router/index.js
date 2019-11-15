@@ -309,6 +309,21 @@ const router = new Router({
             pageTitle: "Alert",
             rule: "editor"
           }
+        },
+        {
+          path: "/components/avatar",
+          name: "component-avatar",
+          component: () =>
+            import("@/views/components/vuesax/avatar/Avatar.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Components" },
+              { title: "Avatar", active: true }
+            ],
+            pageTitle: "Avatar",
+            rule: "editor"
+          }
         }
       ]
     }
