@@ -502,6 +502,21 @@ const router = new Router({
             pageTitle: "Notifications",
             rule: "editor"
           }
+        },
+        {
+          path: "/components/pagination",
+          name: "component-pagination",
+          component: () =>
+            import("@/views/components/vuesax/pagination/Pagination.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Components" },
+              { title: "Pagination", active: true }
+            ],
+            pageTitle: "Pagination",
+            rule: "editor"
+          }
         }
       ]
     }
