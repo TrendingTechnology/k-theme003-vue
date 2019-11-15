@@ -428,6 +428,21 @@ const router = new Router({
             pageTitle: "Divider",
             rule: "editor"
           }
+        },
+        {
+          path: "/components/dropdown",
+          name: "component-drop-down",
+          component: () =>
+            import("@/views/components/vuesax/dropdown/Dropdown.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Components" },
+              { title: "Dropdown", active: true }
+            ],
+            pageTitle: "Dropdown",
+            rule: "editor"
+          }
         }
       ]
     }
