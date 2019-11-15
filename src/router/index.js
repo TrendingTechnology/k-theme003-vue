@@ -254,6 +254,20 @@ const router = new Router({
             pageTitle: "Card Actions",
             rule: "editor"
           }
+        },
+        {
+          path: "/ui-elements/card/card-colors",
+          name: "card-colors",
+          component: () => import("@/views/ui-elements/card/CardColors.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Card" },
+              { title: "Card Colors", active: true }
+            ],
+            pageTitle: "Card Colors",
+            rule: "editor"
+          }
         }
       ]
     }
