@@ -354,6 +354,21 @@ const router = new Router({
             pageTitle: "Button",
             rule: "editor"
           }
+        },
+        {
+          path: "/components/button-group",
+          name: "component-button-group",
+          component: () =>
+            import("@/views/components/vuesax/button-group/ButtonGroup.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Components" },
+              { title: "Button Group", active: true }
+            ],
+            pageTitle: "Button Group",
+            rule: "editor"
+          }
         }
       ]
     }
