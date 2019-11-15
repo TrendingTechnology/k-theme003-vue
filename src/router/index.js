@@ -369,6 +369,20 @@ const router = new Router({
             pageTitle: "Button Group",
             rule: "editor"
           }
+        },
+        {
+          path: "/components/chip",
+          name: "component-chip",
+          component: () => import("@/views/components/vuesax/chip/Chip.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Components" },
+              { title: "Chip", active: true }
+            ],
+            pageTitle: "Chip",
+            rule: "editor"
+          }
         }
       ]
     }
