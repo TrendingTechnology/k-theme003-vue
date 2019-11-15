@@ -211,6 +211,21 @@ const router = new Router({
             pageTitle: "Basic Cards",
             rule: "editor"
           }
+        },
+        {
+          path: "/ui-elements/card/statistics",
+          name: "statistics-cards",
+          component: () =>
+            import("@/views/ui-elements/card/CardStatistics.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Card" },
+              { title: "Statistics Cards", active: true }
+            ],
+            pageTitle: "Statistics Card",
+            rule: "editor"
+          }
         }
       ]
     }
