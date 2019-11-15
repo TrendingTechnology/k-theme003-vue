@@ -413,6 +413,21 @@ const router = new Router({
             pageTitle: "Dialogs",
             rule: "editor"
           }
+        },
+        {
+          path: "/components/divider",
+          name: "component-divider",
+          component: () =>
+            import("@/views/components/vuesax/divider/Divider.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Components" },
+              { title: "Divider", active: true }
+            ],
+            pageTitle: "Divider",
+            rule: "editor"
+          }
         }
       ]
     }
