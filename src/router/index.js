@@ -652,6 +652,23 @@ const router = new Router({
             pageTitle: "Quill Editor",
             rule: "editor"
           }
+        },
+        {
+          path: "/extensions/drag-and-drop",
+          name: "extra-component-drag-and-drop",
+          component: () =>
+            import(
+              "@/views/components/extra-components/drag-and-drop/DragAndDrop.vue"
+            ),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Extra Components" },
+              { title: "Drag & Drop", active: true }
+            ],
+            pageTitle: "Drag & Drop",
+            rule: "editor"
+          }
         }
       ]
     }
