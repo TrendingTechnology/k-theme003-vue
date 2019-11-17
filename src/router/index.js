@@ -720,6 +720,21 @@ const router = new Router({
             pageTitle: "Access Control",
             rule: "editor"
           }
+        },
+        {
+          path: "/extensions/i18n",
+          name: "extra-component-i18n",
+          component: () =>
+            import("@/views/components/extra-components/I18n.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Extensions" },
+              { title: "I18n", active: true }
+            ],
+            pageTitle: "I18n",
+            rule: "editor"
+          }
         }
       ]
     }
