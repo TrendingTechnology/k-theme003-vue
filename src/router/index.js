@@ -833,6 +833,24 @@ const router = new Router({
             pageTitle: "Tree",
             rule: "editor"
           }
+        },
+        {
+          path: "/import-export/import",
+          name: "import-excel",
+          component: () =>
+            import(
+              "@/views/components/extra-components/import-export/Import.vue"
+            ),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Extensions" },
+              { title: "Import/Export" },
+              { title: "Import", active: true }
+            ],
+            pageTitle: "Import Excel",
+            rule: "editor"
+          }
         }
       ]
     }
