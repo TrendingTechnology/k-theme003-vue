@@ -12,7 +12,7 @@
       children: [{ title: &apos;node 1-1-1&apos; }, { title: &apos;node
       1-1-2&apos; }, { title: &apos;node 1-1-3&apos; }] }] }] } }, components: {
       VTree, VSelectTree } } &lt;/script&gt; &lt;style lang=&quot;scss&quot;&gt;
-      @import &quot;@/assets/scss/vuexy/extraComponents/tree.scss&quot;;
+      @import &quot;@/assets/scss/kdev/extraComponents/tree.scss&quot;;
       .tree-box{ background: #fff; position: relative; z-index: 9; .search-input
       { margin-top: 10px; width: 98%; display: block; } } .rmNode{
       background-color: rgba(var(--vs-danger),0.15); color:
@@ -61,7 +61,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "@/assets/scss/vuexy/extraComponents/tree.scss";
+@import "@/assets/scss/kdev/extraComponents/tree.scss";
 
 .tree-box {
   background: #fff;

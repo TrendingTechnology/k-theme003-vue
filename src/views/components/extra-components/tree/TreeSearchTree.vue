@@ -60,7 +60,7 @@
       &apos;loading&apos;, false) if (checked) {
       this.$refs.tree.childCheckedHandle(node, checked) } }, }, components: {
       VTree, VSelectTree } } &lt;/script&gt; &lt;style lang=&quot;scss&quot;&gt;
-      @import &quot;@/assets/scss/vuexy/extraComponents/tree.scss&quot;;
+      @import &quot;@/assets/scss/kdev/extraComponents/tree.scss&quot;;
       button.btn-async{ background: rgba(var(--vs-warning),0.15); }
       button.btn-delete{ background: rgba(var(--vs-danger),0.15); }
       &lt;/style&gt;
@@ -174,7 +174,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "@/assets/scss/vuexy/extraComponents/tree.scss";
+@import "@/assets/scss/kdev/extraComponents/tree.scss";
 
 button.btn-async {
   background: rgba(var(--vs-warning), 0.15);
