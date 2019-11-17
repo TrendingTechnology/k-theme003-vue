@@ -869,6 +869,24 @@ const router = new Router({
             pageTitle: "Export Excel",
             rule: "editor"
           }
+        },
+        {
+          path: "/import-export/export-selected",
+          name: "export-excel-selected",
+          component: () =>
+            import(
+              "@/views/components/extra-components/import-export/ExportSelected.vue"
+            ),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Extensions" },
+              { title: "Import/Export" },
+              { title: "Export Selected", active: true }
+            ],
+            pageTitle: "Export Excel",
+            rule: "editor"
+          }
         }
       ]
     }
