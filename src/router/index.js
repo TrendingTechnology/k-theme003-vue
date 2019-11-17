@@ -784,6 +784,23 @@ const router = new Router({
             pageTitle: "Context Menu",
             rule: "editor"
           }
+        },
+        {
+          path: "/extensions/star-ratings",
+          name: "extra-component-star-ratings",
+          component: () =>
+            import(
+              "@/views/components/extra-components/star-ratings/StarRatings.vue"
+            ),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Extensions" },
+              { title: "Star Ratings", active: true }
+            ],
+            pageTitle: "Star Ratings",
+            rule: "editor"
+          }
         }
       ]
     }
