@@ -686,6 +686,23 @@ const router = new Router({
             pageTitle: "Datepicker",
             rule: "editor"
           }
+        },
+        {
+          path: "/extensions/datetime-picker",
+          name: "extra-component-datetime-picker",
+          component: () =>
+            import(
+              "@/views/components/extra-components/datetime-picker/DatetimePicker.vue"
+            ),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Extra Components" },
+              { title: "Datetime Picker", active: true }
+            ],
+            pageTitle: "Datetime Picker",
+            rule: "editor"
+          }
         }
       ]
     }
