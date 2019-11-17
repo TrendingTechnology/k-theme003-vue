@@ -801,6 +801,23 @@ const router = new Router({
             pageTitle: "Star Ratings",
             rule: "editor"
           }
+        },
+        {
+          path: "/extensions/autocomplete",
+          name: "extra-component-autocomplete",
+          component: () =>
+            import(
+              "@/views/components/extra-components/autocomplete/Autocomplete.vue"
+            ),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Extensions" },
+              { title: "Autocomplete", active: true }
+            ],
+            pageTitle: "Autocomplete",
+            rule: "editor"
+          }
         }
       ]
     }
