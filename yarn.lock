@@ -9799,6 +9799,16 @@ vue-simple-calendar@^4.2.2:
   dependencies:
     vue "^2.6.10"
 
+vue-simple-suggest@^1.10.1:
+  version "1.10.1"
+  resolved "https://registry.yarnpkg.com/vue-simple-suggest/-/vue-simple-suggest-1.10.1.tgz#c536405c7324b624dd03626e26890ee102d59e69"
+  integrity sha512-oPpCF0KBhySOBEyxxFjsYh1DBMVypb6c7C4atLK3h8Bt8sdu+7kLgDHl2CcGGjqpMSFnmTFFDauPleYPNsaaDg==
+
+vue-star-rating@^1.6.1:
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/vue-star-rating/-/vue-star-rating-1.6.1.tgz#160cf66e6af4597180fd2552df5d03d590ec40d4"
+  integrity sha512-JSmVx16rcxyw4Ma6YQ5DnIExyjF4IFf/ypxh3zfmtFZzE/hjswDT0fLn1vF4ERxDbAp0nHA3u51BYFbA8gyYyQ==
+
 vue-style-loader@^4.1.0:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/vue-style-loader/-/vue-style-loader-4.1.2.tgz#dedf349806f25ceb4e64f3ad7c0a44fba735fcf8"
