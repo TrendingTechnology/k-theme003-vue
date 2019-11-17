@@ -703,6 +703,23 @@ const router = new Router({
             pageTitle: "Datetime Picker",
             rule: "editor"
           }
+        },
+        {
+          path: "/extensions/access-control",
+          name: "extra-component-access-control",
+          component: () =>
+            import(
+              "@/views/components/extra-components/access-control/AccessControl.vue"
+            ),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Extensions" },
+              { title: "Access Control", active: true }
+            ],
+            pageTitle: "Access Control",
+            rule: "editor"
+          }
         }
       ]
     }
