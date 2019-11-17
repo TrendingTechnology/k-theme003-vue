@@ -818,6 +818,21 @@ const router = new Router({
             pageTitle: "Autocomplete",
             rule: "editor"
           }
+        },
+        {
+          path: "/extensions/tree",
+          name: "extra-component-tree",
+          component: () =>
+            import("@/views/components/extra-components/tree/Tree.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Extensions" },
+              { title: "Tree", active: true }
+            ],
+            pageTitle: "Tree",
+            rule: "editor"
+          }
         }
       ]
     }
