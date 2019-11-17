@@ -669,6 +669,23 @@ const router = new Router({
             pageTitle: "Drag & Drop",
             rule: "editor"
           }
+        },
+        {
+          path: "/extensions/datepicker",
+          name: "extra-component-datepicker",
+          component: () =>
+            import(
+              "@/views/components/extra-components/datepicker/Datepicker.vue"
+            ),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Extra Components" },
+              { title: "Datepicker", active: true }
+            ],
+            pageTitle: "Datepicker",
+            rule: "editor"
+          }
         }
       ]
     }
