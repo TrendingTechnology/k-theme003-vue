@@ -767,6 +767,23 @@ const router = new Router({
             pageTitle: "Clipboard",
             rule: "editor"
           }
+        },
+        {
+          path: "/extensions/context-menu",
+          name: "extra-component-context-menu",
+          component: () =>
+            import(
+              "@/views/components/extra-components/context-menu/ContextMenu.vue"
+            ),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Extensions" },
+              { title: "Context Menu", active: true }
+            ],
+            pageTitle: "Context Menu",
+            rule: "editor"
+          }
         }
       ]
     }
