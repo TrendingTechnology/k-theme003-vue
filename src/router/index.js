@@ -620,6 +620,21 @@ const router = new Router({
             pageTitle: "Upload",
             rule: "editor"
           }
+        },
+        {
+          path: "/extensions/select",
+          name: "extra-component-select",
+          component: () =>
+            import("@/views/components/extra-components/select/Select.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Extra Components" },
+              { title: "Select", active: true }
+            ],
+            pageTitle: "Select",
+            rule: "editor"
+          }
         }
       ]
     }
