@@ -750,6 +750,23 @@ const router = new Router({
             pageTitle: "Carousel",
             rule: "editor"
           }
+        },
+        {
+          path: "/extensions/clipboard",
+          name: "extra-component-clipboard",
+          component: () =>
+            import(
+              "@/views/components/extra-components/clipboard/Clipboard.vue"
+            ),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Extensions" },
+              { title: "Clipboard", active: true }
+            ],
+            pageTitle: "Clipboard",
+            rule: "editor"
+          }
         }
       ]
     }
