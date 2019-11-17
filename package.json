@@ -54,7 +54,8 @@
     "vuedraggable": "^2.23.2",
     "vuejs-datepicker": "^1.6.2",
     "vuesax": "^3.11.1",
-    "vuex": "^3.1.1"
+    "vuex": "^3.1.1",
+    "xlsx": "^0.15.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.0.0",
