@@ -735,6 +735,21 @@ const router = new Router({
             pageTitle: "I18n",
             rule: "editor"
           }
+        },
+        {
+          path: "/extensions/carousel",
+          name: "extra-component-carousel",
+          component: () =>
+            import("@/views/components/extra-components/carousel/Carousel.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Extensions" },
+              { title: "Carousel", active: true }
+            ],
+            pageTitle: "Carousel",
+            rule: "editor"
+          }
         }
       ]
     }
