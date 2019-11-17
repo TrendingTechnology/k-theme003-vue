@@ -635,6 +635,23 @@ const router = new Router({
             pageTitle: "Select",
             rule: "editor"
           }
+        },
+        {
+          path: "/extensions/quill-editor",
+          name: "extra-component-quill-editor",
+          component: () =>
+            import(
+              "@/views/components/extra-components/quill-editor/QuillEditor.vue"
+            ),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Extra Components" },
+              { title: "Quill Editor", active: true }
+            ],
+            pageTitle: "Quill Editor",
+            rule: "editor"
+          }
         }
       ]
     }
